@@ -1,0 +1,270 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400, 600');
+@font-face {
+    font-family: Post Grotesk;
+    src: url('../fonts/PostGrotesk-Book.ttf'); 
+}
+@font-face {
+    font-family: Post Grotesk Medium;
+    src: url('../fonts/PostGrotesk-Medium.ttf'); 
+}
+
+//Variables
+$h1-font: Playfair Display, Georgia, serif;
+$h2-font: Post Grotesk Medium, Helvetica, sans-serif;
+$p-font: Post Grotesk, Helvetica, sans-serif;
+$mono-font: Overpass Mono, Courier, monospace;
+
+$body-color: #474747;
+$header-color: #464ED2;
+$caption-color: #9C9FD3;
+$background-color: #F5F7FF;
+$hover-color: #5381FF;
+$link-color: #5963F6;
+
+$quote-color: #F9FAFF;
+$quote-text-color: #05204E;
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+a:hover{
+	color: $hover-color;
+}
+
+p, li{
+	color: $body-color;
+	font-family: $p-font;
+	font-size: 18px;
+	line-height: 29px;
+	letter-spacing: -0.1px;
+}
+
+h1 {
+	color: $header-color;
+	font-family: $h1-font;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 47px;
+	margin: auto;
+	text-align: center;
+	letter-spacing: -0.1px;
+	}
+
+h2{
+	color: $header-color;
+	font-family: $h2-font;
+	font-size: 18px;
+	line-height: 29px;
+}
+
+h3{
+	color: $caption-color;
+	font-family: $p-font;
+	font-size: 18px;
+	letter-spacing: -0.1px;
+	line-height: 25px;
+}
+
+h4{
+	color: $header-color;
+	font-family: $mono-font;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	line-height: 29px;
+}
+
+.hero-text h1{
+	font-size: 55px;
+	line-height: 67px;
+	text-align: left;
+}
+
+.hero-text p{
+	color: $header-color;
+	font-size: 20px;
+	margin-top: 15px;
+	max-width: 400px;
+}
+
+.proj2 h1{
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+
+//Projects
+.card-details h2, .card-details h3, .card-details p{
+	margin: 0px 10px 0px 10px;
+}
+
+.card-detail h2, .card-detail h3, .card-detail p{
+	margin: 0px 10px 0px 10px;
+}
+
+.card-actions h4, .card-actions a{
+	margin: 0px 10px 0px 10px;
+}
+
+.card-details p, .card-detail p{
+	margin-top: 10px;
+}
+
+@media (max-width: 1050px) {
+	.hero-text h1 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.hero-text p {
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 750px) {
+	.hero-text h1, h1 {
+		font-size: 28px;
+		line-height: 39px;
+		text-align: center;
+	}
+	.hero-text p {
+		font-size: 19px;
+		line-height: 30px;
+		text-align: center;
+	}
+	.card-details p{
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 500px) {
+	.hero-text h1, h1 {
+		margin-top: 0px;
+		font-size: 34px;
+		line-height: 39px;
+	}
+
+	.hero-text p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	p{
+		line-height: 28px;
+	}
+
+}
+
+@media (max-width: 320px) {
+	.hero-text h1, h1 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+}
+
+//Footer
+.footer h4{
+	font-size: 16px;
+}
+
+//Projects
+.project-title h2 {
+	margin: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.content-container h1, .project-container h1{
+	font-size: 36px;
+	text-align: left;
+}
+
+.content-container h1{
+	font-family: $h1-font;
+	color: $body-color;
+	letter-spacing: -0.5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.project-title h1 {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.content-container h2{
+   	display:inline-block;
+	font-family: $mono-font;
+	color: $body-color;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	line-height: 30px;
+	margin-top: 0px;
+	white-space: normal;
+	margin-bottom: 15px;
+	word-wrap: initial;
+}
+
+.content-container p{
+	margin-bottom: 35px;
+	letter-spacing: -0.1px;
+	line-height: 28px;
+}
+
+.content-container ul{
+	margin-bottom: 35px;
+	list-style-type: square;
+}
+
+.quote{
+	background-color: $quote-color;
+	padding: 30px;
+	color: $quote-text-color;
+	font-family: $h1-font;
+	font-size: 24px;
+	letter-spacing: 0px;
+}
+
+.content-container .quote{
+	line-height: 38px;
+}
+
+@media (max-width: 500px) {
+	.quote{
+		padding: 5px;
+	}
+
+}
+
+.quote:first-letter{
+	font-size: 40px;
+}
+
+.number:first-letter{
+	font-size: 24dpx;
+	color: $header-color;
+	margin-right: 15px;
+}
+
+.button{
+	font-family: $h2-font;
+	font-size: 18px;
+	border: 1px solid $header-color;
+	padding: 20px 20px 15px 20px;
+}
+
+
+
+
+
+
+
+
+
+

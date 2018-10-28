@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - styles.scss
+
+Backtrace:
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:454:in `read'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/plugin.rb:109:in `method_missing'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest@global/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest/bin/sass:22:in `load'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest/bin/sass:22:in `<main>'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest/bin/ruby_executable_hooks:15:in `eval'
+/Users/sherryxy/.rvm/gems/ruby-2.3.3-latest/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - styles.scss"; }
